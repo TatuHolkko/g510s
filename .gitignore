@@ -41,5 +41,8 @@ g510s
 # debug information files
 *.dwo
 
+# Configuration files
+local.mk
+
 # IDE files
 .vscode/

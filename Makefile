@@ -1,3 +1,5 @@
+-include local.mk
+
 default: g510s
 
 g510s.o: g510s.c g510s.h

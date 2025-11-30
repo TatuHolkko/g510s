@@ -13,6 +13,24 @@ There is an Ubuntu PPA available here: https://launchpad.net/~vivnet/+archive/ub
   * libappindicator3-dev
   * libgtk-3-dev
 
+# Linking to LibG15
+
+## During building
+
+If you have an up-to-date version of libg15 installed, 
+the compiler might try to use that version and possibly
+fail. To fix this, you can add a 'local.mk' file into 
+the root of the project, and put for example
+`LDFLAGS += -L/usr/lib` (where ever the old version is
+installed) in the file.
+
+## During runtime
+
+If you needed to add LDFLAGS during compiling, you
+probably also probably need to fix the runtime library
+directory, which you can do by launching the program
+with `LD_LIBRARY_PATH=/usr/lib ./g510s`
+
 # TODO
   * Valgrind
   * New icon
