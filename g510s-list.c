@@ -30,6 +30,7 @@ lcd_t * create_lcd() {
   lcd_t *lcd = malloc(sizeof(lcd_t));
   lcd->max_x = G15_LCD_WIDTH;
   lcd->max_y = G15_LCD_HEIGHT;
+  lcd->ident = 0;
   lcd->backlight_state = G15_BRIGHTNESS_MEDIUM;
   lcd->mkey_state = G15_LED_MR;
   lcd->contrast_state = G15_CONTRAST_MEDIUM;
