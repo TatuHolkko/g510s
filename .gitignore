@@ -36,6 +36,7 @@
 *.exe
 *.out
 *.app
+g510s
 
 # debug information files
 *.dwo
