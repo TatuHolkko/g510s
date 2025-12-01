@@ -28,6 +28,7 @@
 
 lcd_t * create_lcd() {
   lcd_t *lcd = malloc(sizeof(lcd_t));
+  memset(lcd->buf, 0, 1048);
   lcd->max_x = G15_LCD_WIDTH;
   lcd->max_y = G15_LCD_HEIGHT;
   lcd->ident = 0;

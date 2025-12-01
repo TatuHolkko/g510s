@@ -61,7 +61,7 @@ void *lcd_client_function(void *display) {
         break;
       }
       //pthread_mutex_lock(&lcdlist_mutex);
-      memset(client_lcd->buf, 0, 1024);
+      memset(client_lcd->buf, 0, 1048);
       convert_buf(client_lcd, tmpbuf);
       client_lcd->ident = random();
       //pthread_mutex_unlock(&lcdlist_mutex);
@@ -198,7 +198,7 @@ void *update_function(void *lcdlist) {
   static long int lastlcd = 1;
   
   lcd_t *displaying = displaylist->tail->lcd;
-  memset(displaying->buf, 0, 1024);
+  memset(displaying->buf, 0, 1048);
   displaying->ident = 0;
   
   while (!leaving) {
