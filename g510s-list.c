@@ -50,7 +50,7 @@ lcdlist_t *lcdlist_init() {
   //pthread_mutex_init(&lcdlist_mutex, NULL);
   //pthread_mutex_lock(&lcdlist_mutex);
   
-  displaylist = malloc(sizeof(lcdnode_t));
+  displaylist = malloc(sizeof(lcdlist_t));
   
   displaylist->head = malloc(sizeof(lcdnode_t));
   
